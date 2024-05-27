@@ -1,0 +1,482 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0"> 
+    <title>My Portfolio</title> 
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity= "sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="protpholio.css"> 
+    <link rel="stylesheet" href="responsive.css"> 
+    <style>
+        /* Set display to none for image*/
+        #cvimage {
+            display: none;
+        }
+        #hideID{
+            display: none;
+        }
+    </style>
+
+</head> 
+
+<body> 
+    <!-- Navbar header section -->
+    <header class="header"> 
+        <nav class="navbar"> 
+            <div class="profile"> 
+                <img src="../Images/profile21.jpg" height="200px;" 
+                alt="Profile "> 
+            </div> 
+            <div class="hamburger" id="hamburger"> 
+                <i class="fas fa-bars hamburger-icon"></i> 
+                <i class="fas fa-times cross-icon"></i> 
+            </div> 
+            <div class="menu"> 
+                <ul class="menu-list"> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#home"> 
+                            Home 
+                        </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#about"> 
+                            About 
+                        </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#services"> 
+                            Expriance 
+                        </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#Projects"> 
+                            Projects 
+                        </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#Certification"> 
+                            Certification 
+                        </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#portfolio"> 
+                            Skills 
+                        </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#portfolio"> 
+                            Education 
+                        </a> 
+                    </li> 
+                   
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#contact"> 
+                            Contact Me 
+                        </a> 
+                    </li> 
+                </ul> 
+            </div> 
+        </nav> 
+    </header> 
+    
+
+   
+    <!-- Main hero banner -->
+    <section id="home" class="hero"> 
+        <div class="intro"> 
+            <div class="headings" id="head"> 
+                <h3 class="greet-heading">Hello, I'm</h3> 
+                <h1 class="my-heading">Esubalew Amare</h1> 
+                <h3 class="greet-heading">
+                    A Software Engineer with 2.7 years of Experience. 
+                </h3> 
+            </div> 
+            <div class="intro-buttons" > 
+                <button class="btn common-btn"id="profile" >Hire Me
+                 <div class="image" id="image"> 
+                            <img src="../Images/profile21.jpg" height="200px;" 
+                                alt="Web Design Image"> 
+                        </div></button> 
+                        <a target="_blank">
+                <button class="btn ghost-btn" type="button" onclick="show()" id="btnID">Get Resume</button> 
+           
+                <img id="cvimage" src="./cvprofile.PNG" height="100%" width="100%" alt="no cv image" />
+
+                <button class="btn ghost-btn" type="button" onclick="hide()" id="hideID">Hide Resume</button> 
+          </a>
+
+            </div> 
+         
+        </div> 
+    </section> 
+    
+          
+            
+     
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="Projects"> 
+        <div class="portfolio-heading"> 
+            <h1 class="my-heading text-center"style="background-image: linear-gradient(35deg, #222c79, #174957);">PROJECTS</h1> 
+            <p style="text-align: center;">I have worked in different projects : For Example</p>
+        </div> 
+
+        <div class="portfolio-content"> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./mkportal.PNG"
+                                alt="Web Design Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text">1 MK-Portal</h3> 
+                        <p class="small-para blue-text">It is an ERP system that developed with asp.net MVC
+to automate company internal work flow such as HR, Finance,
+Inventory &project managements.</p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Assest.PNG"
+                                alt="Web Development Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                            Member Portal 
+                        </h3> 
+                        <p class="small-para blue-text">is a web based application that used to manage
+companies member information, their monthly payment</p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Ecomerce.PNG" alt="SEO Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text">Ecomerce System </h3> 
+                        <p class="small-para blue-text">it is for Promotion Company Products ,Display ,Transaction , and download different
+File type</p> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Assest.PNG"
+                                alt="Content Writting Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                          Assest Management System 
+                        </h3> 
+                        <p class="small-para blue-text">for managing the company Hardware and
+software Resources</p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./eotcmk.PNG"
+                                alt="Wordpress Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                            EOTCMk Website
+                        </h3> 
+                        <p class="small-para blue-text"> 
+                           For Posting the Company Data Books , News ,etc
+                        </p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./GibiGubea.PNG"
+                                alt="Video Editing Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                            Gibi Gubea  
+                        </h3> 
+                        <p class="small-para blue-text">For Managing Gibi Gubea students </p> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+
+    <!-- About Section -->
+        
+        <section id="about" class="about"> 
+        <div class="about-text"> 
+            <h1 class="my-heading text-center"style="background-image: linear-gradient(35deg, #222c79, #174957);">About Me</h1> 
+     
+            <div class="portfolio-content"> 
+                <div class="my-row"> 
+                    <div class="my-card port-card"> 
+                            
+                            <p class="small-para blue-text">
+                
+ My name is  Esubalew Amare Desalegn and I have attended my BSc Degree program by
+Computer Science in University of Gondar since Augusts 29, 2021 with CGPA
+of 3.26. Furthermore, I am honest, open minded, responsible and I dedicated
+myself to my work. I have More than two year experience by software
+developer. up now I work in software development and i have level 4 COC in
+Database Administration and also a good number of skills in QA Testing,
+wordpress website, deployment of the system.I have 1 year of professional work experience which helped me strengthen my experience web development. I am passionate about developing simple applications that solve real-world problems.
+
+                            </p>
+                            <p class="small-para blue-text">
+              Personally, I am a very friendly person presentable and sociable, endowed with
+an excellent skill of communication. I am sure to be your best candidate and I
+am available for an interview session in convenient time . The details for the
+necessary information can be obtained from the CV and temporary degree.
+Thank you for your time and consideration. I look forward to hearing from you.
+            </p> 
+            <p class="small-para blue-text">
+       <b>Languages:</b>  C#, JavaScript, angular, react, HTML/CSS, phyton,<br>
+<b>Databases:</b> MySQL, SQL, postgress, Firebase<br>
+<b>Frameworks:</b>Bootstrap, Adminlte, tailwindcss, vuejs, reactjs, react native
+Looking for an opportunity to work in a challenging position combining my skills in Programming, which provides professional development, interesting experiences and personal growth.
+       </p>
+                    
+                        </div>
+                        </div>
+        </div>
+    </section> 
+
+    <!-- Services Section -->  <div class="services-heading"> 
+            <h1 class="my-heading text-center"style="background-image: linear-gradient(35deg, #222c79, #174957);"> EXPERIENCE</h1> 
+          
+        </div> 
+    <section class="services" id="services"> 
+      
+        <div class="services-content"> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fas fa-paint-brush"></i> 
+                        </div> 
+                        <h3 class="greet-heading blue-text">System Mangement</h3> 
+                        <p class="small-para"> 
+                           i have use different Source code Management and task management for collabrating the 
+                           team work as single repository eg git lab , git Hub ,Trello ,Jira 
+                        </p> 
+                 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fa-solid fa-code"></i> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                            Web Development 
+                        </h3> 
+                        <p class="small-para"> 
+                            Web development refers to the creating, 
+                            building, and maintaining 
+                            of websites.  
+                            It is the creation of an 
+                            application that works over the internet 
+                            i.e. websites. 
+                        </p> 
+                      
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fas fa-chart-line"></i> 
+                        </div> 
+                        <h3 class="greet-heading blue-text">Quality Assurance</h3> 
+                        <p class="small-para"> 
+                           Testing the System  to the 
+                           responsiveness  , cross site Checking 
+                           functional performancy ,  Security Issue etc. 
+                        </p> 
+                 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fas fa-quote-left"></i> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                            System Hosting
+                        </h3> 
+                        <p class="small-para"> 
+                         Deploy the Products in different server for accessing the system as publicly or privatly as needed 
+                         to show the system to end user  or  to use the system
+                        </p> 
+                     
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fab fa-wordpress-simple"></i> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                            WordPress Customazation 
+                        </h3> 
+                        <p class="small-para"> 
+                            I have developed the wordpress System for posting 
+                            company news , Notification , Calender etc 
+                        </p> 
+                    
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fas fa-bars"></i> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                           Team Leader
+                        </h3> 
+                        <p class="small-para"> 
+                           i have worked as team leader to collabirate the team work 
+                            . it is important to finish the system based on schedule time and  with best 
+                           performance 
+                        </p> 
+                       
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+
+    <!-- Contact me section -->
+    <section class="contact" id="contact"> 
+        <div class="contact-heading"> 
+            
+                <h1 class="my-heading text-center"style="background-image: linear-gradient(35deg, #222c79, #174957);"> Contact Me</h1> 
+              
+            </div> 
+           
+        </div> 
+        <div class="contact-content"> 
+            <div class="contact-form-container"> 
+                <h1 class="greet-heading">Get In Touch</h1> 
+                <form class="contact-form"> 
+                    <input class="form-controls" type="text"
+                        placeholder="Your Name"> 
+                    <input class="form-controls" type="text"
+                        placeholder="Your Email"> 
+                    <input class="form-controls" type="text"
+                        placeholder="Your Phone"> 
+                    <textarea class="form-controls"
+                            placeholder="Write your message"
+                            name="message" id="" cols="30"
+                            rows="10"> 
+                    </textarea> 
+                    <input class="form-btn btn common-btn"
+                        type="submit" value="Send Message"> 
+                </form> 
+            </div> 
+            <div class="contact-details"> 
+                <h1 class="greet-heading">My Contact Details</h1> 
+                <div class="details"> 
+                    <h5 class="contact-heading">EMAIL</h5> 
+                    <p class="contact-text">esubalewcs2012@gmail.com</p> 
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">PHONE</h5> 
+                    <p class="contact-text">+251 953 634 482</p> 
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">Job </h5> 
+                    <p class="contact-text">Software Developer</p> 
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">ADDRESS</h5> 
+                    <p class="contact-text"> Ferensay Addis Ababa , Ethiopia</p> 
+                    <p>Expriance </p> 
+                    <p>2 year with 8 month</p> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+
+    <!-- Footer section -->
+    <footer class="footer"> 
+        <div class="footer-content text-center"> 
+            <h4> 
+                Copyright © 2023 All rights reserved | 
+               
+            </h4> 
+            <div class="social-links"> 
+                <div class="footer-menu"> 
+                    <ul class="footer-menu-list"> 
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="https://www.facebook.com/profile.php?id=61551896245084"> 
+                                <i class="fab fa-facebook-f"></i> 
+                            </a> 
+                        </li> 
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="#"> 
+                                <i class="fab fa-twitter"></i> 
+                            </a> 
+                        </li> 
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="#"> 
+                                <i class="fab fa-instagram"></i> 
+                            </a> 
+                        </li> 
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="https://www.linkedin.com/in/esubalew-amare-556681248/"> 
+                                <i class="fab fa-linkedin-in"></i> 
+                            </a> 
+                        </li> 
+                    </ul> 
+                </div> 
+            </div> 
+        </div> 
+    </footer> 
+    <script>
+        function show() {
+            /* Access image by id and change 
+            the display property to block*/
+            document.getElementById('cvimage')
+                .style.display = "block";
+             
+            document.getElementById('btnID')
+                .style.display = "none";
+                document.getElementById('hideID')
+            .style.display="block";
+            document.getElementById('profile')
+                .style.display = "none";
+                document.getElementById('head')
+              .style.display="none";
+        }
+        function hide(){
+            document.getElementById('cvimage')
+            .style.display='none';
+            document.getElementById('btnID')
+            .style.display="block";
+            document.getElementById('hideID')
+            .style.display="none";
+            document.getElementById('image')
+            .style.display="block";
+            document.getElementById('profile')
+                .style.display = "block";
+                document.getElementById('head')
+              .style.display="block";
+        }
+    </script>
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity= 
+"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"> 
+    </script> 
+    <script src="script.js"></script> 
+</body> 
+
+</html>
